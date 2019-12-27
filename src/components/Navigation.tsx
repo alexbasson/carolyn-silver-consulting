@@ -4,19 +4,9 @@ import './Navigation.css';
 
 export const Navigation = () => (
   <nav className="Navigation">
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/services">Services</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
-    </ul>
+    <div className="link"><Link to="/">Home</Link></div>
+    <div className="link"><Link to="/about">About</Link></div>
+    <div className="link"><Link to="/services">Services</Link></div>
+    <div className="link"><Link to="/contact">Contact</Link></div>
   </nav>
 );

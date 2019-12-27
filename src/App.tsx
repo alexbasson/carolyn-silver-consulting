@@ -9,6 +9,7 @@ import {ContactPage} from './pages/ContactPage'
 import {HomePage} from './pages/HomePage'
 import {Header} from './components/Header'
 import {ServicesPage} from './pages/ServicesPage';
+import {ContentPage} from './components/ContentPage';
 
 const App: React.FC = () => (
   <Router>
@@ -17,13 +18,19 @@ const App: React.FC = () => (
 
       <Switch>
         <Route path="/about">
-          <AboutPage/>
+          <ContentPage title="about">
+            <AboutPage/>
+          </ContentPage>
         </Route>
         <Route path="/contact">
-          <ContactPage/>
+          <ContentPage title="contact">
+            <ContactPage/>
+          </ContentPage>
         </Route>
         <Route path="/services">
-          <ServicesPage/>
+          <ContentPage title="services">
+            <ServicesPage/>
+          </ContentPage>
         </Route>
         <Route path="/">
           <HomePage/>

@@ -1,0 +1,18 @@
+.AboutPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  width: 30%;
+  margin-right: 8px;
+}
+
+.right {
+  width: 70%;
+}
+
+.left img {
+  width: 100%;
+}

@@ -8,6 +8,10 @@
   background-size: 100% auto;
 }
 
+.content {
+  padding: 0 16px;
+}
+
 p {
   margin-bottom: 8px;
 }
