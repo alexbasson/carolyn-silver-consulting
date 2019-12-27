@@ -1,0 +1,21 @@
+.Navigation {
+}
+
+.Navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Navigation ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.Navigation a:hover {
+  border-bottom: 2px solid #282c34;
+}
+
+.Navigation ul li:last-of-type {
+  padding: 0;
+}

@@ -1,0 +1,13 @@
+.banner {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 16px;
+  color: white;
+  background-image: url('../assets/images/forest.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+p {
+  margin-bottom: 8px;
+}
