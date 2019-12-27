@@ -1,11 +1,18 @@
 import React from 'react';
 import './ContactPage.css';
+import {contactInfo} from '../data/ContactInfo'
+import {parsePhoneNumberFromString} from 'libphonenumber-js'
 
-export const ContactPage = () => (
-  <div className="ContactPage">
-    <ul>
-      <li><label>phone:</label><a href="tel:+19176127791">(917) 612-7791</a></li>
-      <li><label>email:</label><a href="mailto:info@carolynsilver.com">info@carolynsilver.com</a></li>
-    </ul>
-  </div>
-);
+export const ContactPage = () => {
+  const phone = parsePhoneNumberFromString(contactInfo.phone);
+  const email = contactInfo.email;
+
+  return (
+    <div className="ContactPage">
+      <ul>
+        <li><label>phone:</label><a href={phone?.getURI()}>{phone?.formatNational()}</a></li>
+        <li><label>email:</label><a href={`mailto:${email}`}>{email}</a></li>
+      </ul>
+    </div>
+  );
+};
