@@ -10,33 +10,34 @@ import {HomePage} from './pages/HomePage'
 import {Header} from './components/Header'
 import {ServicesPage} from './pages/ServicesPage';
 import {ContentPage} from './components/ContentPage';
+import {Footer} from './components/Footer';
 
 const App: React.FC = () => (
   <Router>
-    <div>
-      <Header/>
+    <Header/>
 
-      <Switch>
-        <Route path="/about">
-          <ContentPage title="about">
-            <AboutPage/>
-          </ContentPage>
-        </Route>
-        <Route path="/contact">
-          <ContentPage title="contact">
-            <ContactPage/>
-          </ContentPage>
-        </Route>
-        <Route path="/services">
-          <ContentPage title="services">
-            <ServicesPage/>
-          </ContentPage>
-        </Route>
-        <Route path="/">
-          <HomePage/>
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route path="/about">
+        <ContentPage title="about">
+          <AboutPage/>
+        </ContentPage>
+      </Route>
+      <Route path="/contact">
+        <ContentPage title="contact">
+          <ContactPage/>
+        </ContentPage>
+      </Route>
+      <Route path="/services">
+        <ContentPage title="services">
+          <ServicesPage/>
+        </ContentPage>
+      </Route>
+      <Route path="/">
+        <HomePage/>
+      </Route>
+    </Switch>
+
+    <Footer/>
   </Router>
 );
 

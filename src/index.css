@@ -13,11 +13,6 @@ h1, h2, h3, h4, p, a, ul, li {
   padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 a {
   text-decoration: none;
   color: green;
