@@ -1,0 +1,13 @@
+.ServicesPage {
+
+}
+
+.ServicesPage ul {
+  padding-left: 24px;
+}
+
+.ServicesPage ul li {
+  display: list-item;
+  list-style-type: disc;
+  margin-top: 8px;
+}

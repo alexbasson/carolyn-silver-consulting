@@ -1,8 +1,9 @@
-ul {
+.ContactPage ul {
   width: 300px;
+  padding: 0;
 }
 
-ul li {
+.ContactPage ul li {
   margin-bottom: 8px;
   list-style-type: none;
   display: flex;

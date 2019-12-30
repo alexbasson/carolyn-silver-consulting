@@ -1,18 +1,21 @@
-.banner {
+.HomePage .banner {
   height: 150px;
   width: 100%;
   margin-bottom: 16px;
-  padding-left: 16px;
   color: white;
   background-image: url('../assets/images/forest.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
-.content {
+.HomePage .banner h1 {
+  margin: 0 16px;
+}
+
+.HomePage .content {
   padding: 0 16px;
 }
 
-p {
+.HomePage p {
   margin-bottom: 8px;
 }
