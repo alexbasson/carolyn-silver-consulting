@@ -21,3 +21,30 @@ a {
 a:hover {
   color: darkgreen;
 }
+
+p {
+  margin-bottom: 16px;
+}
+
+ul {
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.col-left {
+  width: 400px;
+}
+
+.col-left img {
+  width: 100%;
+}
+
+.col-right {
+  padding: 0 16px;
+  max-width: 550px;
+}
