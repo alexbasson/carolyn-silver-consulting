@@ -1,13 +1,23 @@
 import React from 'react';
 import './ContentPage.css'
+import contact from '../assets/images/contact.jpeg';
 
 interface Props {
   title: string;
+  image: string;
 }
 
-export const ContentPage: React.FC<Props> = ({title, children}) => (
+export const ContentPage: React.FC<Props> = ({title, image, children}) => (
   <div className="ContentPage">
     <h1 className="title">{title}</h1>
-    {children}
+    <div className="row">
+      <div className="col-left">
+        <img src={image} alt={title}/>
+      </div>
+
+      <div className="col-right">
+        {children}
+      </div>
+    </div>
   </div>
 );

@@ -11,6 +11,10 @@ import {Header} from './components/Header'
 import {ServicesPage} from './pages/ServicesPage';
 import {ContentPage} from './components/ContentPage';
 import {Footer} from './components/Footer';
+import about from './assets/images/about.jpeg';
+import services from './assets/images/services.jpeg';
+import contact from './assets/images/contact.jpeg';
+
 
 const App: React.FC = () => (
   <Router>
@@ -18,17 +22,17 @@ const App: React.FC = () => (
 
     <Switch>
       <Route path="/about">
-        <ContentPage title="about">
+        <ContentPage title="about" image={about}>
           <AboutPage/>
         </ContentPage>
       </Route>
       <Route path="/contact">
-        <ContentPage title="contact">
+        <ContentPage title="contact" image={contact}>
           <ContactPage/>
         </ContentPage>
       </Route>
       <Route path="/services">
-        <ContentPage title="services">
+        <ContentPage title="services" image={services}>
           <ServicesPage/>
         </ContentPage>
       </Route>
