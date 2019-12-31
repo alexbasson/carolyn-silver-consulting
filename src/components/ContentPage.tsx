@@ -9,14 +9,16 @@ interface Props {
 
 export const ContentPage: React.FC<Props> = ({title, image, children}) => (
   <div className="ContentPage">
-    <h1 className="title">{title}</h1>
-    <div className="row">
-      <div className="col-left">
-        <img src={image} alt={title}/>
-      </div>
+    <div className="container">
+      <h1 className="title">{title}</h1>
+      <div className="row">
+        <div className="col-left">
+          <img src={image} alt={title}/>
+        </div>
 
-      <div className="col-right">
-        {children}
+        <div className="col-right">
+          {children}
+        </div>
       </div>
     </div>
   </div>
