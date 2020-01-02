@@ -1,17 +1,16 @@
 import React from 'react';
 import './ContactPage.css';
 import {contactInfo} from '../data/ContactInfo'
-import {parsePhoneNumberFromString} from 'libphonenumber-js'
+import {ContactInfoPresenter} from '../presenters/ContactInfoPresenter';
 
 export const ContactPage = () => {
-  const phone = parsePhoneNumberFromString(contactInfo.phone);
-  const email = contactInfo.email;
+  const contactInfoPresenter = new ContactInfoPresenter(contactInfo);
 
   return (
     <div className="ContactPage">
       <ul className="">
-        <li><label>phone:</label><a href={phone?.getURI()}>{phone?.formatNational()}</a></li>
-        <li><label>email:</label><a href={`mailto:${email}`}>{email}</a></li>
+        <li><label>phone:</label>{contactInfoPresenter.phoneLink}</li>
+        <li><label>email:</label>{contactInfoPresenter.emailLink}</li>
       </ul>
     </div>
   );

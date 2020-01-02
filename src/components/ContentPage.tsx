@@ -1,6 +1,5 @@
 import React from 'react';
 import './ContentPage.css'
-import contact from '../assets/images/contact.jpeg';
 
 interface Props {
   title: string;
