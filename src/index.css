@@ -15,11 +15,11 @@ h1, h2, h3, h4, p, a, ul, li {
 
 a {
   text-decoration: none;
-  color: green;
+  color: royalblue;
 }
 
 a:hover {
-  color: darkgreen;
+  color: darkblue;
 }
 
 p {
