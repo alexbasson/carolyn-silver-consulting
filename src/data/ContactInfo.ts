@@ -4,6 +4,6 @@ export interface ContactInfo {
 }
 
 export const contactInfo: ContactInfo = {
-  phone: '+19176127791',
-  email: 'silverconsultingbk@gmail.com'
+  phone: '+19292740127',
+  email: 'info@carolynsilver.com'
 };
