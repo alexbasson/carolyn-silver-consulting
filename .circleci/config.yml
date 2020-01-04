@@ -1,0 +1,85 @@
+version: 2.1
+jobs:
+  install:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: node-modules-cache-{{ checksum "package.json" }}
+
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Clean build
+          command: npm run clean
+      - run:
+          name: Build project
+          command: npm run build
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./build
+            - ./firebase.json
+
+  test:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Run tests
+          command: npm test
+
+  deploy:
+    docker:
+      - image: circleci/node
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Install Firebase tools
+          command: npm install --save-dev firebase-tools
+      - run:
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --project carolyn-silver-consulting --token=$FIREBASE_DEPLOY_TOKEN
+
+
+workflows:
+  build:
+    jobs:
+      - install
+      - build:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
+      - deploy:
+          context: deploy-context
+          requires:
+            - build
+            - test
