@@ -13,6 +13,10 @@ h1, h2, h3, h4, p, a, ul, li {
   padding: 0;
 }
 
+h1, h2 {
+  font-family: 'Header Bold';
+}
+
 a {
   text-decoration: none;
   color: royalblue;
@@ -22,10 +26,19 @@ a:hover {
   color: darkblue;
 }
 
-p {
+p, a, li, label {
+  font-family: 'Body';
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 1.3;
+}
+
+strong {
+  font-family: 'Body Bold';
+}
+
+em {
+  font-family: 'Body Italic';
 }
 
 ul {
