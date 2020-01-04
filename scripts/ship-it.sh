@@ -7,8 +7,7 @@ SUCCESS=$?
 
 if [ $SUCCESS -eq 0 ]
 then
-  npm run build
-  firebase deploy
+  git push
 
   echo " ____    _   _    ____    ____   _____   ____    ____  "
   echo "/ ___|  | | | |  / ___|  / ___| | ____| / ___|  / ___| "
