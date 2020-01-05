@@ -8,10 +8,10 @@ export const ContactPage = () => {
 
   return (
     <div className="ContactPage">
-      <p>Contact Carolyn today to learn more about Carolyn's services and to take the first step toward organizational change.</p>
+      <p>I look forward to hearing from you.</p>
       <ul className="">
-        <li><label>phone:</label>{contactInfoPresenter.phoneLink}</li>
-        <li><label>email:</label>{contactInfoPresenter.emailLink}</li>
+        <li><label>Phone:</label>{contactInfoPresenter.phoneLink}</li>
+        <li><label>Email:</label>{contactInfoPresenter.emailLink}</li>
       </ul>
     </div>
   );
