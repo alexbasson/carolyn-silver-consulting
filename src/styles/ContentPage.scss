@@ -4,11 +4,21 @@
 @import 'spacing';
 
 .ContentPage {
-  padding-bottom: $footer-size !important;
+  @media(min-width: $mobile-breakpoint) {
+    padding-bottom: $footer-size-mobile !important;
+  }
+
+  @media(min-width: $tablet-breakpoint) {
+    padding-bottom: $footer-size-tablet !important;
+  }
+
+  @media(min-width: $desktop-breakpoint) {
+    padding-bottom: $footer-size-desktop !important;
+  }
 
   .container {
     margin: 0 auto !important;
-    max-width: $desktop !important;
+    max-width: $desktop-breakpoint !important;
   }
 
   .title {
@@ -26,11 +36,11 @@
   }
 
   .text {
-    @media(min-width: $mobile) {
+    @media(min-width: $mobile-breakpoint) {
       padding: 0 $medium !important;
     }
 
-    @media(min-width: $desktop) {
+    @media(min-width: $desktop-breakpoint) {
       padding: 0 !important;
     }
   }

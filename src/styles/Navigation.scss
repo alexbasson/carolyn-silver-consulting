@@ -7,11 +7,11 @@
   justify-content: space-between;
   align-items: center;
 
-  @media(min-width: $mobile) {
+  @media(min-width: $mobile-breakpoint) {
     width: 100%;
   }
 
-  @media(min-width: $desktop) {
+  @media(min-width: $desktop-breakpoint) {
     width: 350px;
   }
 

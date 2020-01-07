@@ -9,8 +9,10 @@ $xxlarge: $unit * 4; // 32px
 
 $font-size: 17px;
 
-$footer-size: 100px;
+$footer-size-mobile: 60px;
+$footer-size-tablet: 80px;
+$footer-size-desktop: 100px;
 
-$mobile: 0px;
-$tablet: 600px;
-$desktop: 960px;
+$mobile-breakpoint: 0px;
+$tablet-breakpoint: 600px;
+$desktop-breakpoint: 960px;

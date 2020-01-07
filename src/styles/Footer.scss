@@ -6,14 +6,26 @@
 .Footer {
   position: fixed;
   bottom: 0;
-  height: $footer-size;
   width: 100%;
   @extend .fdr;
   @extend .fjc;
   @extend .fac;
   @extend .bg-color-light-gray;
 
+  @media(min-width: $mobile-breakpoint) {
+    height: $footer-size-mobile;
+  }
+
+  @media(min-width: $tablet-breakpoint) {
+    height: $footer-size-tablet;
+  }
+
+  @media(min-width: $desktop-breakpoint) {
+    height: $footer-size-desktop;
+  }
+
   p {
+    @extend .mvn;
     @extend .mhs;
   }
 }

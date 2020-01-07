@@ -27,6 +27,16 @@
       @extend .mbl;
     }
 
-    padding-bottom: $footer-size !important;
+    @media(min-width: $mobile-breakpoint) {
+      padding-bottom: $footer-size-mobile !important;
+    }
+
+    @media(min-width: $tablet-breakpoint) {
+      padding-bottom: $footer-size-tablet !important;
+    }
+
+    @media(min-width: $desktop-breakpoint) {
+      padding-bottom: $footer-size-desktop !important;
+    }
   }
 }
