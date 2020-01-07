@@ -9,6 +9,7 @@ export const Footer = () => {
   return (
     <footer className="Footer">
       <p>{contactInfoPresenter.phoneLink}</p>
+      <p>•</p>
       <p>{contactInfoPresenter.emailLink}</p>
     </footer>
   );
