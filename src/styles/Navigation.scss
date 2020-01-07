@@ -1,11 +1,19 @@
 @import 'colors';
-@import 'flex';
 @import 'sizes';
 
 .nav {
-  @extend .fdr;
-  @extend .fjb;
-  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(min-width: $mobile) {
+    width: 100%;
+  }
+
+  @media(min-width: $desktop) {
+    width: 350px;
+  }
 
   .link {
     text-transform: uppercase;

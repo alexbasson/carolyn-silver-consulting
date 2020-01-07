@@ -1,10 +1,29 @@
-@import 'flex';
+@import 'sizes';
 @import 'spacing';
 
 .header {
-  @extend .fdr;
-  @extend .fjb;
-  @extend .fac;
   @extend .phl;
   @extend .mvxl;
+
+  @media(min-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      margin-bottom: $large !important;
+    }
+  }
+
+  @media(min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      margin-bottom: 0 !important;
+    }
+  }
 }

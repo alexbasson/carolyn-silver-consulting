@@ -1,0 +1,57 @@
+@import '@material/layout-grid/mdc-layout-grid';
+
+.grid {
+  @extend .mdc-layout-grid;
+}
+
+.grid-inner {
+  @extend .mdc-layout-grid__inner;
+}
+
+.col {
+  @extend .mdc-layout-grid__cell;
+}
+
+.col-4 {
+  @extend .mdc-layout-grid__cell--span-4;
+}
+
+.col-6 {
+  @extend .mdc-layout-grid__cell--span-6;
+}
+
+.col-8 {
+  @extend .mdc-layout-grid__cell--span-8;
+}
+
+.col-4-desktop {
+  @extend .mdc-layout-grid__cell--span-4-desktop;
+}
+
+.col-6-desktop {
+  @extend .mdc-layout-grid__cell--span-6-desktop;
+}
+
+.col-8-desktop {
+  @extend .mdc-layout-grid__cell--span-8-desktop;
+}
+
+.col-2-tablet {
+  @extend .mdc-layout-grid__cell--span-2-tablet;
+}
+
+.col-4-tablet {
+  @extend .mdc-layout-grid__cell--span-4-tablet;
+}
+
+.col-6-tablet {
+  @extend .mdc-layout-grid__cell--span-6-tablet;
+}
+
+.col-8-tablet {
+  @extend .mdc-layout-grid__cell--span-8-tablet;
+}
+
+.col-4-mobile {
+  @extend .mdc-layout-grid__cell--span-4-phone;
+}

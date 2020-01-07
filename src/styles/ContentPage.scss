@@ -4,9 +4,12 @@
 @import 'spacing';
 
 .ContentPage {
-  padding-bottom: $footer-size;
-  @extend .fdr;
-  @extend .fjc;
+  padding-bottom: $footer-size !important;
+
+  .container {
+    margin: 0 auto !important;
+    max-width: $desktop !important;
+  }
 
   .title {
     text-transform: capitalize;
@@ -15,5 +18,20 @@
     @extend .pvm;
     @extend .phl;
     @extend .bg-color-light-blue;
+  }
+
+  .img > img {
+    object-fit: cover;
+    width: 100%
+  }
+
+  .text {
+    @media(min-width: $mobile) {
+      padding: 0 $medium !important;
+    }
+
+    @media(min-width: $desktop) {
+      padding: 0 !important;
+    }
   }
 }

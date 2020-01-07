@@ -22,21 +22,11 @@
 
   .content {
     @extend .phl;
-    padding-bottom: $footer-size;
-    @extend .fdr;
-    @extend .fjb;
 
-    section {
-      @extend .phxxl;
-      max-width: 800px;
-
-      h2 {
-        @extend .mbxxl;
-      }
-
-      p {
-        @extend .mbm;
-      }
+    .title {
+      @extend .mbl;
     }
+
+    padding-bottom: $footer-size !important;
   }
 }
