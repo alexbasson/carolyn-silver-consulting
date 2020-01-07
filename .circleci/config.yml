@@ -71,15 +71,27 @@ jobs:
 workflows:
   build:
     jobs:
-      - install
+      - install:
+          filters:
+            branches:
+              only: master
       - build:
           requires:
             - install
+          filters:
+            branches:
+              only: master
       - test:
           requires:
             - install
+          filters:
+            branches:
+              only: master
       - deploy:
           context: deploy-context
           requires:
             - build
             - test
+          filters:
+            branches:
+              only: master
