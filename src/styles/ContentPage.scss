@@ -1,14 +1,19 @@
-.ContentPage {
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+@import 'flex';
+@import 'sizes';
+@import 'colors';
+@import 'spacing';
 
-.title {
-  text-transform: capitalize;
-  font-size: 24px;
-  margin-bottom: 16px;
-  padding: 8px 0 8px 16px;
-  background-color: lightblue;
+.ContentPage {
+  padding-bottom: $footer-size;
+  @extend .fdr;
+  @extend .fjc;
+
+  .title {
+    text-transform: capitalize;
+    font-size: $xlarge;
+    @extend .mbl;
+    @extend .pvm;
+    @extend .phl;
+    @extend .bg-color-light-blue;
+  }
 }

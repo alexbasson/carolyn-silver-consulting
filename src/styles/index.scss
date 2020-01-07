@@ -1,56 +1,57 @@
-@import "fonts";
+@import 'sizes';
+@import 'spacing';
+@import 'fonts';
+@import 'colors';
+@import 'flex';
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  @extend .man;
+  @extend .pan;
+  @extend .font-body;
+  @extend .color-dark-gray;
+  font-size: $font-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #282c34;
 }
 
-h1, h2, h3, h4, p, a, ul, li {
-  margin: 0;
-  padding: 0;
+div, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, label {
+  @extend .man;
+  @extend .pan;
 }
 
 h1, h2 {
-  font-family: 'Header Bold';
+  @extend .font-header-bold;
 }
 
 a {
   text-decoration: none;
-  color: royalblue;
+  @extend .color-blue;
 }
 
 a:hover {
-  color: darkblue;
+  @extend .color-dark-blue;
 }
 
 p, a, li {
-  font-family: 'Body';
-  font-size: 17px;
-  margin-bottom: 16px;
+  @extend .mbl;
   line-height: 1.3;
 }
 
 strong {
-  font-family: 'Body Bold';
+  @extend .font-body-bold;
 }
 
 em {
-  font-family: 'Body Italic';
+  @extend .font-body-italic;
 }
 
 ul {
-  margin-bottom: 16px;
+  @extend .mbl;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
+  @extend .fdr;
+  @extend .fjl;
 }
 
 .col-left {
@@ -62,7 +63,7 @@ ul {
 }
 
 .col-right {
-  margin-left: 32px;
+  @extend .mlxxl;
   max-width: 528px;
   width: 528px;
 }

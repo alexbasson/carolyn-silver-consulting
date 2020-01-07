@@ -1,0 +1,41 @@
+$white: white;
+$light-gray: #eeeeee;
+$dark-gray: #282c34;
+$black: black;
+
+$light-blue: lightblue;
+$blue: royalblue;
+$dark-blue: darkblue;
+
+$colors: (
+  white: $white,
+  light-gray: $light-gray,
+  dark-gray: $dark-gray,
+  black: $black,
+  light-blue: $light-blue,
+  blue: $blue,
+  dark-blue: $dark-blue
+);
+
+@mixin colors($colors: ()) {
+  @each $colorPair in $colors {
+    $key: nth($colorPair, 1);
+    $color: nth($colorPair, 2);
+    .color-#{$key} {
+      color: $color !important;
+    }
+  }
+}
+
+@mixin background-colors($colors: ()) {
+  @each $colorPair in $colors {
+    $key: nth($colorPair, 1);
+    $color: nth($colorPair, 2);
+    .bg-color-#{$key} {
+      background-color: $color !important;
+    }
+  }
+}
+
+@include colors($colors);
+@include background-colors($colors);

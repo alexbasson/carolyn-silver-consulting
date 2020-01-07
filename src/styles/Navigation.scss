@@ -1,16 +1,19 @@
-.Navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@import 'colors';
+@import 'flex';
+@import 'sizes';
+
+.nav {
+  @extend .fdr;
+  @extend .fjb;
   width: 350px;
-}
 
-.Navigation .link {
-  text-transform: uppercase;
-  font-size: 14px;
-}
+  .link {
+    text-transform: uppercase;
+    font-size: $font-size;
+  }
 
-.Navigation a:hover {
-  font-weight: 500;
-  border-bottom: 2px solid #282c34;
+  a:hover {
+    font-weight: 500;
+    border-bottom: 2px solid $dark-gray;
+  }
 }

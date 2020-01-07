@@ -1,8 +1,10 @@
-.Header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  margin: 24px 0;
+@import 'flex';
+@import 'spacing';
+
+.header {
+  @extend .fdr;
+  @extend .fjb;
+  @extend .fac;
+  @extend .phl;
+  @extend .mvxl;
 }

@@ -1,35 +1,42 @@
-.HomePage .banner {
-  height: 200px;
-  width: 100%;
-  margin-bottom: 16px;
-  color: white;
-  background-image: url('../assets/images/banner-sunset2.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
+@import 'colors';
+@import 'fonts';
+@import 'flex';
+@import 'sizes';
+@import 'spacing';
 
-.HomePage .banner h1 {
-  font-family: 'Body Bold';
-  margin: 0 16px;
-}
+.HomePage {
+  .banner {
+    height: 200px;
+    width: 100%;
+    @extend .mbl;
+    @extend .color-white;
+    background-image: url('../assets/images/banner-sunset2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
-.HomePage .content {
-  padding: 0 16px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+    h1 {
+      @extend .font-body-bold;
+      @extend .mhl;
+    }
+  }
 
-.HomePage .content h2 {
-  margin-bottom: 24px;
-}
+  .content {
+    @extend .phl;
+    padding-bottom: $footer-size;
+    @extend .fdr;
+    @extend .fjb;
 
-.HomePage .content p {
-  margin-bottom: 8px;
-}
+    section {
+      @extend .phxxl;
+      max-width: 800px;
 
-.HomePage .content section {
-  padding: 0 32px;
-  max-width: 800px;
+      h2 {
+        @extend .mbxxl;
+      }
+
+      p {
+        @extend .mbm;
+      }
+    }
+  }
 }

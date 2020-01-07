@@ -1,13 +1,15 @@
+@import 'fonts';
+@import 'sizes';
+@import 'spacing';
+
 .ServicesPage {
+  section {
+    margin: 30px 0;
+  }
 
-}
-
-.ServicesPage section {
-  margin: 30px 0;
-}
-
-.ServicesPage h3 {
-  font-family: 'Body';
-  font-size: 16px;
-  margin-bottom: 4px;
+  h3 {
+    @extend .font-body;
+    font-size: $font-size;
+    @extend .mbs;
+  }
 }
