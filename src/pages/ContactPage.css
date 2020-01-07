@@ -1,12 +1,16 @@
 .ContactPage ul {
-  width: 300px;
+  width: 220px;
   padding: 0;
 }
 
 .ContactPage ul li {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+}
+
+.ContactPage ul li label {
+  min-width: 60px;
 }
