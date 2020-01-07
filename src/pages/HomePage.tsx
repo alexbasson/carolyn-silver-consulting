@@ -10,14 +10,14 @@ export const HomePage = () => {
   return (
     <div className="HomePage">
       <div className="banner">
-        <h1>Strategic consulting services for mission-driven nonprofit organizations</h1>
+        <h1>Strategies for mission-driven nonprofit organizations</h1>
       </div>
       <div className="content">
         <section>
-          <div className="left">
+          <div>
             <h2>Who we are</h2>
           </div>
-          <div className="right">
+          <div>
             <p><strong>Carolyn Silver Consulting</strong> provides consulting services to non-profit organizations
               seeking to improve their programmatic operations; enhance their impact; and take the next step toward
               operational excellence. With a particular focus on legal services and human services organizations,
