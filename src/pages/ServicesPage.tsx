@@ -1,5 +1,5 @@
 import React from 'react';
-import './ServicesPage.css';
+import '../styles/ServicesPage.scss';
 
 export const ServicesPage = () => (
   <div className="ServicesPage">

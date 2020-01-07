@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import './ContentPage.css'
+import '../styles/ContentPage.scss'
 
 interface Props {
   title: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactPage.css';
+import '../styles/ContactPage.scss';
 import {contactInfo} from '../data/ContactInfo'
 import {ContactInfoPresenter} from '../presenters/ContactInfoPresenter';
 
