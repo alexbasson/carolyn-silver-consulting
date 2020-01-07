@@ -8,7 +8,7 @@ export const ContactPage = () => {
 
   return (
     <div className="ContactPage">
-      <p>I look forward to hearing from you.</p>
+      <p>Email or call Carolyn today to learn more about her services and working together.</p>
       <ul className="">
         <li><label>Phone:</label>{contactInfoPresenter.phoneLink}</li>
         <li><label>Email:</label>{contactInfoPresenter.emailLink}</li>
