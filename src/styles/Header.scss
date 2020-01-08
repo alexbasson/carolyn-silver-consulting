@@ -8,8 +8,7 @@
   @media(min-width: $mobile-breakpoint) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
     .title {
       margin-bottom: $large !important;
