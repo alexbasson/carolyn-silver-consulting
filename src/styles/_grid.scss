@@ -8,50 +8,40 @@
   @extend .mdc-layout-grid__inner;
 }
 
-.col {
-  @extend .mdc-layout-grid__cell;
+@function mdc_column_suffix($column, $device) {
+  @if ($column == 0) {
+    @return ''
+  }
+  @if ($device == '') {
+    @return --span-#{$column}
+  }
+  @return --span-#{$column}-#{$device}
 }
 
-.col-4 {
-  @extend .mdc-layout-grid__cell--span-4;
+@function class_name($column, $device) {
+  @if ($column == 0) {
+    @return col;
+  }
+  @if ($device == '') {
+    @return col-#{$column};
+  }
+  @return col-#{$column}-#{$device}
 }
 
-.col-6 {
-  @extend .mdc-layout-grid__cell--span-6;
+@mixin columns($devices: ()) {
+  $col-limit: 12;
+
+  @each $device in $devices {
+    @if ($device == phone) { $col-limit: 4}
+    @if ($device == tablet) { $col-limit: 8}
+    @if ($device == desktop) { $col-limit: 12}
+
+    @for $column from 0 through $col-limit {
+      .#{class_name($column, $device)} {
+        @extend .mdc-layout-grid__cell#{mdc_column_suffix($column, $device)}
+      }
+    }
+  }
 }
 
-.col-8 {
-  @extend .mdc-layout-grid__cell--span-8;
-}
-
-.col-4-desktop {
-  @extend .mdc-layout-grid__cell--span-4-desktop;
-}
-
-.col-6-desktop {
-  @extend .mdc-layout-grid__cell--span-6-desktop;
-}
-
-.col-8-desktop {
-  @extend .mdc-layout-grid__cell--span-8-desktop;
-}
-
-.col-2-tablet {
-  @extend .mdc-layout-grid__cell--span-2-tablet;
-}
-
-.col-4-tablet {
-  @extend .mdc-layout-grid__cell--span-4-tablet;
-}
-
-.col-6-tablet {
-  @extend .mdc-layout-grid__cell--span-6-tablet;
-}
-
-.col-8-tablet {
-  @extend .mdc-layout-grid__cell--span-8-tablet;
-}
-
-.col-4-mobile {
-  @extend .mdc-layout-grid__cell--span-4-phone;
-}
+@include columns(('', desktop, tablet, phone));
