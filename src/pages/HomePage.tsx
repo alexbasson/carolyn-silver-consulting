@@ -18,8 +18,8 @@ export const HomePage = () => {
           <section className="col-4 col-8-tablet">
             <h2 className="title">Who we are</h2>
             <p><strong>Carolyn Silver Consulting</strong> provides consulting services to non-profit organizations
-              seeking to improve their programmatic operations; enhance their impact; and take the next step toward
-              operational excellence. With a particular focus on legal services and human services
+              seeking to improve their programmatic operations; enhance their impact; and achieve operational
+              excellence. With a particular focus on legal services and human services
               organizations, <strong>Carolyn Silver Consulting</strong> offers concrete solutions, insights and
               strategies designed to transform programs and organizational culture. Carolyn Silver is a creative,
               collaborative problem-solver who will join you as a thought partner, listen to your concerns and help

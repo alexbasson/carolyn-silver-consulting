@@ -37,7 +37,11 @@ export const ServicesPage = () => (
         resolution.</p>
     </section>
 
-    <p>In addition to these services, as an experienced attorney, Carolyn also offers discrete legal services, including
-      contract review; HR-related investigations; and employment policy and procedure development and review.</p>
+    <section>
+      <h3>Legal Services</h3>
+      <p>As an experienced attorney, Carolyn can provide discrete legal services to your organization, including
+        contract review; HR-related investigations; and employment policy and procedure development and review.</p>
+    </section>
+
   </div>
 );

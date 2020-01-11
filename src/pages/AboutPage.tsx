@@ -2,9 +2,9 @@ import React from 'react';
 
 export const AboutPage = () => (
   <div>
-    <p>Carolyn Silver has dedicated her entire career to the pursuit of social justice, and has significant non-profit
-      organizational leadership and management experience. During her fourteen year tenure at Lenox Hill Neighborhood
-      House, she provided strategic vision and programmatic oversight, led diverse interdisciplinary teams, coached and
+    <p>Carolyn Silver has dedicated her career to non-profit organizational leadership in the pursuit of social justice.
+      During her fourteen year tenure at Lenox Hill Neighborhood House,
+      she provided strategic vision and programmatic oversight, led diverse interdisciplinary teams, coached and
       mentored staff, created and developed new areas of programming, spearheaded organizational efforts to improve
       outcome measurement and program evaluation, and worked collaboratively with partners to ensure the highest quality
       of program operations.</p>
@@ -17,9 +17,12 @@ export const AboutPage = () => (
       Co-President of the Board of the New York State Legal Services Coalition, and she was a founding member of LEAP, a
       New York City coalition of legal services providers.</p>
 
-    <p>Carolyn graduated magna cum laude, Phi Beta Kappa from Tufts University (BA, Social Psychology) and graduated cum
-      laude from the University of Pennsylvania Law School where she was a member of the Order of the Coif, a Senior
-      Editor of the <em>University of Pennsylvania Law Review</em>, and was the recipient of the Henry Meachem Public Service
-      Award. She also has certificates in nonprofit leadership from Columbia Business School and Baruch College.</p>
+    <p>Carolyn received a Certificates from Columbia Business School's Senior Leaders Program for Nonprofit
+      Professionals and a Certificate in Nonprofit Leadership from Baruch College.
+      Carolyn graduated <em>magna cum laude</em>,
+      Phi Beta Kappa from Tufts University with a BA in Social Psychology and
+      graduated <em>cum laude</em> from the University of Pennsylvania Law School where she was a member of the Order of the Coif,
+      a Senior Editor of the <em>University of Pennsylvania Law Review</em>,
+      and was the recipient of the Henry Meachem Public Service Award.</p>
   </div>
 );
