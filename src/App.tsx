@@ -15,7 +15,6 @@ import about from './assets/images/about.jpeg';
 import services from './assets/images/services.jpeg';
 import contact from './assets/images/contact.jpeg';
 
-
 const App: React.FC = () => (
   <Router>
     <Header/>
