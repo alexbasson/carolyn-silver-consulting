@@ -43,3 +43,17 @@ $t-shirt-sizes: (n, xs, s, m, l, xl, xxl);
 }
 
 @include whitespace(($xsmall, $small, $medium, $large, $xlarge, $xxlarge));
+
+.footer-bottom {
+  @media(min-width: $mobile-breakpoint) {
+    padding-bottom: $footer-size-mobile !important;
+  }
+
+  @media(min-width: $tablet-breakpoint) {
+    padding-bottom: $footer-size-tablet !important;
+  }
+
+  @media(min-width: $desktop-breakpoint) {
+    padding-bottom: $footer-size-desktop !important;
+  }
+}

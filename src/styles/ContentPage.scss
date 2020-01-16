@@ -4,6 +4,9 @@
 @import 'spacing';
 
 .ContentPage {
+  margin: 0 auto !important;
+  max-width: $desktop-breakpoint !important;
+
   @media(min-width: $mobile-breakpoint) {
     padding-bottom: $footer-size-mobile !important;
   }
@@ -14,11 +17,6 @@
 
   @media(min-width: $desktop-breakpoint) {
     padding-bottom: $footer-size-desktop !important;
-  }
-
-  .container {
-    margin: 0 auto !important;
-    max-width: $desktop-breakpoint !important;
   }
 
   .title {

@@ -13,17 +13,15 @@ export const ContentPage: React.FC<Props> = ({title, image, children}) => {
 
   return (
     <div className="ContentPage">
+      <h1 className="title">{title}</h1>
       <div className="container">
-        <h1 className="title">{title}</h1>
-        <div className="grid">
-          <div className="grid-inner">
-            <div className="col-4-desktop col-2-tablet col-4-phone img">
-              <img src={image} alt={title}/>
-            </div>
+        <div className="row">
+          <div className="col-lg-4 col-md-2 col-sm-4 img">
+            <img src={image} alt={title}/>
+          </div>
 
-            <div className="col-8-desktop col-6-tablet col-4-phone text">
-              {children}
-            </div>
+          <div className="col-lg-8 col-md-6 col-sm-4 text">
+            {children}
           </div>
         </div>
       </div>

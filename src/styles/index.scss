@@ -49,22 +49,3 @@ em {
 ul {
   @extend .mbl;
 }
-
-.row {
-  @extend .fdr;
-  @extend .fjl;
-}
-
-.col-left {
-  width: 400px;
-}
-
-.col-left img {
-  width: 100%;
-}
-
-.col-right {
-  @extend .mlxxl;
-  max-width: 528px;
-  width: 528px;
-}

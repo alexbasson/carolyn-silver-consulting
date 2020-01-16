@@ -1,10 +1,10 @@
 @import '@material/layout-grid/mdc-layout-grid';
 
-.grid {
+.container {
   @extend .mdc-layout-grid;
 }
 
-.grid-inner {
+.row {
   @extend .mdc-layout-grid__inner;
 }
 
@@ -18,30 +18,29 @@
   @return --span-#{$column}-#{$device}
 }
 
-@function class_name($column, $device) {
+@function class_name($column, $screen-size) {
   @if ($column == 0) {
     @return col;
   }
-  @if ($device == '') {
+  @if ($screen-size == '') {
     @return col-#{$column};
   }
-  @return col-#{$column}-#{$device}
+  @return col-#{$screen-size}-#{$column}
 }
 
 @mixin columns($devices: ()) {
-  $col-limit: 12;
-
-  @each $device in $devices {
-    @if ($device == phone) { $col-limit: 4}
-    @if ($device == tablet) { $col-limit: 8}
-    @if ($device == desktop) { $col-limit: 12}
+  @each $tuple in $devices {
+    $device: nth($tuple, 1);
+    $screen-size: nth($tuple, 2);
+    $col-limit: nth($tuple, 3);
 
     @for $column from 0 through $col-limit {
-      .#{class_name($column, $device)} {
+      .#{class_name($column, $screen-size)} {
         @extend .mdc-layout-grid__cell#{mdc_column_suffix($column, $device)}
       }
     }
   }
 }
 
-@include columns(('', desktop, tablet, phone));
+$device-tuples: ('' '' 12, desktop lg 12, tablet md 8, phone sm 4);
+@include columns($device-tuples);

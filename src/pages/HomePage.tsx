@@ -13,10 +13,10 @@ export const HomePage = () => {
         <h1>Strategies for Mission-Driven Nonprofit Organizations</h1>
       </div>
 
-      <div className="content grid">
-        <div className="grid-inner">
-          <section className="col-4 col-8-tablet">
-            <h2 className="title">Who we are</h2>
+      <div className="container phl footer-bottom">
+        <div className="row">
+          <section className="col-4 col-md-8">
+            <h2 className="mbl">Who we are</h2>
             <p><strong>Carolyn Silver Consulting</strong> provides consulting services to non-profit organizations
               seeking to improve their programmatic operations; enhance their impact; and achieve operational
               excellence. With a particular focus on legal services and human services
@@ -28,7 +28,7 @@ export const HomePage = () => {
             <p><Link to="/about">Learn more</Link> about Carolyn’s background and experience.</p>
           </section>
 
-          <section className="col-4 col-8-tablet">
+          <section className="col-4 col-md-8">
             <h2 className="title">What we do</h2>
             <p><strong>Carolyn Silver Consulting</strong> provides a wide range of services to nonprofit
               organizations,
@@ -40,7 +40,7 @@ export const HomePage = () => {
             <p><Link to="/services">Learn more</Link> about these services.</p>
           </section>
 
-          <section className="col-4 col-8-tablet">
+          <section className="col-4 col-md-8">
             <h2 className="title">Get in touch</h2>
             <p><Link to="/contact">Contact Carolyn</Link> today to learn more about service offerings and to take
               the first step toward organizational change.</p>
