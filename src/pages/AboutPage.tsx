@@ -3,7 +3,7 @@ import React from 'react';
 export const AboutPage = () => (
   <div>
     <p>Carolyn Silver has dedicated her career to non-profit organizational leadership in the pursuit of social justice.
-      During her fourteen year tenure at Lenox Hill Neighborhood House,
+      As Chief Program Officer at Lenox Hill Neighborhood House,
       she provided strategic vision and programmatic oversight, led diverse interdisciplinary teams, coached and
       mentored staff, created and developed new areas of programming, spearheaded organizational efforts to improve
       outcome measurement and program evaluation, and worked collaboratively with partners to ensure the highest quality
